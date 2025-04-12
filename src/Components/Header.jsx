@@ -1,15 +1,13 @@
 import React from 'react'
-import Logo from '../Image/logo.png';
-import search from '../Image/search.png'
-import setting from '../Image/setting.png'
-import cart from '../Image/cart.png'
-import list from '../Backend/HeaderData';
+
+
 import { Link } from 'react-router';
 export default function Header() {
    
   return (
     <div >
-        <div className='flex justify-between py-7 px-5  lg:px-20 items-center shadow '>
+
+        {/* <div className='flex justify-between py-7 px-5  lg:px-20 items-center shadow '>
             <img src={Logo} alt="" />
             <div  className=' lg:flex hidden justify-between gap-14'>
                 <ul className='flex capitalize text-xl items-center gap-7 '>
@@ -28,7 +26,7 @@ export default function Header() {
                 </div>
             </div>   
 
-        </div>
+        </div> */}
     </div>
   )
 }

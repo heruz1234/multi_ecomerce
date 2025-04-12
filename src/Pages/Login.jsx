@@ -10,7 +10,7 @@ export default function Login() {
        <div className='lg:px-20   '>
           <h1 className=' uppercase font-bold text-3xl pb-4'>login</h1>
           <div className='lg:flex  justify-between'>
-            <div className="lg:w-[47%] mb-4 lg:mb-0 flex flex-col gap-6  p-6 border">
+            <div className="lg:w-[47%] mb-4  flex flex-col gap-6  p-6 border">
               <div className="flex flex-col gap-2">
                 <p className=' capitalize font-medium'>Last Name</p>
                 <input type="text" placeholder='Lastname'  className='px-10 py-4 border'/>

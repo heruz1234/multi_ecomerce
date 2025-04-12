@@ -2,32 +2,32 @@
 
 
 .banner {
-    background-image: url(../src/Image/1.jpg);
+    background-image: url(../src/Ban/bb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .bann {
-    background-image: url(../src/Image/ban.jpg);
+    background-image: url(../src/Ban/2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .sub_1 {
-    background-image: url(../src/Image/sub-banner1.5d5f9c6f.jpg);
+    background-image: url(../src/Ban/sub-banner1.5d5f9c6f.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .sub_2 {
-    background-image: url(../src/Image/sub-banner2.3b2448f3.jpg);
+    background-image: url(../src/Ban/sub-banner2.3b2448f3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fashion{
-    background-image: url(../src/Image/ban.jpg);
+    background-image: url(../src/Ban/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
