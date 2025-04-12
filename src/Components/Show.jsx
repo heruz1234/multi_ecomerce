@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import products from '../Backend/Product'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 import { Link, useNavigate, useParams } from 'react-router';
 
 
@@ -13,15 +15,34 @@ export default function Show() {
         setImage(() => ({[index] : imageurl}))
    };
   
+   const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [{
+        breakpoint:480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    }]
+  };
+ 
 
   return (
     
    
-       <div  className=' px-20 flex flex-wrap gap-5 justify-between'>
+       <div  className=' lg:px-20 px-5    lg:gap-5 justify-between'>
+           <Slider {...settings}>
         {
             products.map((item,index) => {
                 return ( 
-            <div className="w-15% shadow ">
+            <div className="lg:w-15% w-fit shadow ">
                <div className='flex  relative'>
 
                 <div className='h-[55vh] '>
@@ -57,7 +78,7 @@ export default function Show() {
        </div>
                 )
             })
-        }
+        }</Slider>
         </div>
   
   )

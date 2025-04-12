@@ -24,9 +24,9 @@ export default function SIngle() {
     <div className=' min-h-[200vh]' >
       <Header />
       {/*Hero*/}
-       <div className='px-20 flex justify-between  py-8'>
+       <div className='lg:px-20 px-3  flex justify-between  py-8'>
         {/* left side */}
-          <div className='flex w-[22%] flex-col gap-5'>
+          <div className='lg:flex hidden w-[22%] flex-col gap-5'>
             <Brand />
             <Service />
             <NewProduct />
@@ -34,9 +34,9 @@ export default function SIngle() {
           <div>
             <div className=''>
               {/* middle section */}
-              <div className="flex gap-4">
+              <div className="lg:flex gap-4">
                 <Product_display item={data} />
-                <div className='w-[35vw] px-2'>
+                <div className='lg:w-[35vw] px-2'>
                   <About_single item={data} />
                   <Product_details item={data} /> 
                 </div>

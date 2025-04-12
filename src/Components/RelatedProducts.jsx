@@ -9,10 +9,10 @@ export default function RelatedProducts( ) {
     }
    
   return (
-    <div className='px-20 py-8'>
+    <div className='lg:px-20 lg:py-8'>
       <h1 className='w-full pb-4 mb-4  text-4xl uppercase font-medium border-b ' >related product</h1>
       
-      <div className='flex gap-2'>
+      <div className='flex flex-wrap gap-2'>
         {
           R_Data.map((item,index) => {
                 return(

@@ -21,7 +21,7 @@ function App() {
        transition={Bounce}
         />
       <Router />
-      <p  className=  ' p-2 bg-black text-white right-0 top-[20px] fixed ' >Dark</p>
+      {/* <p  className=  ' sm:hidden p-2 bg-black text-white right-0 top-[20px] fixed ' >Dark</p> */}
     </div>
   )
 }

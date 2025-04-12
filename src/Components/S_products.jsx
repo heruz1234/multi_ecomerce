@@ -1,16 +1,38 @@
 import React from 'react'
 import Special_product from '../Backend/S_product'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 export default function S_products() {
+    
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [{
+        breakpoint:480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    }]
+  };
+ 
   return (
-    <div className='px-20'>
+    <div className='lg:px-20 px-3'>
       <div className='py-5 flex flex-col gap-1 items-center'>
         <h1 className=' capitalize text-[#ff4c3b] font-medium text-2xl '>our collection</h1>
-        <p   className='font-medium uppercase text-4xl'>special products</p>
+        <p   className='font-medium uppercase text-3xl lg:text-4xl'>special products</p>
         <span className='w-24 border border-x-0 border-y-2 border-[#ff4c3b]'></span>
       </div>
      
-        <div className='flex flex-wrap justify-between'>
+        <div className=' '>
+        <Slider {...settings}> 
         {
         Special_product.map((item,index) => {
             return(
@@ -26,7 +48,7 @@ export default function S_products() {
           
                )
             })
-          }
+          } </Slider>
         </div>  
     </div>
   )

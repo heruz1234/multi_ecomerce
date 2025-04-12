@@ -9,9 +9,9 @@ export default function Header() {
    
   return (
     <div >
-        <div className='flex justify-between py-7 px-20 items-center shadow '>
+        <div className='flex justify-between py-7 px-5  lg:px-20 items-center shadow '>
             <img src={Logo} alt="" />
-            <div  className=' flex justify-between gap-14'>
+            <div  className=' lg:flex hidden justify-between gap-14'>
                 <ul className='flex capitalize text-xl items-center gap-7 '>
                 {
                     list.map((item,index) => {

@@ -1,40 +1,27 @@
 import React, { useState } from 'react'
 import products from '../Backend/Product'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
 export default function Fashion_slider() {
      const [image ,setImage] = useState('')
        const changeImg = (index ,imageurl) => {
             setImage(() => ({[index] : imageurl}))
        };
-       const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 2000,
-        cssEase: "linear"
-
-      };
+       
   return (
     <div>
         
-         <div  className=' px-20  gap-5 justify-between'>
-         <Slider {...settings}>
+         <div  className=' lg:px-20 gap-3 px-3 flex flex-wrap  lg:gap-5 justify-between'>
+        
               {
                   products.map((item,index) => {
                       return ( 
-                  <div className="w-15% shadow ">
+                  <div className="lg:w-[25%] w-[48%]  shadow ">
                      <div className='flex  relative'>
       
-                      <div className='h-[55vh] '>
+                      <div className='lg:h-[55vh] h-[35vh] '>
                           <img src={image[index] || item.img_1} className='w-full h-full' ></img>
                       </div>
                      
-                     <div className="h-[55vh] mt-0 w-[20%]  absolute flex  flex-col justify-end ">
+                     <div className="lg:h-[55vh] h-[35vh] mt-0 w-[20%]  absolute flex  flex-col justify-end ">
                           <div>
                               <img onClick={() => changeImg(index, item.img_1)} className='cursor-pointer hover:opacity-100 opacity-40 ' src={ item.img_1} ></img>
                               <img onClick={() => changeImg(index, item.img_2)} className='cursor-pointer hover:opacity-100 opacity-40 ' src={ item.img_2}></img>
@@ -64,7 +51,7 @@ export default function Fashion_slider() {
                       )
                   })
               }
-               </Slider> 
+                
               </div>
             
     </div>
