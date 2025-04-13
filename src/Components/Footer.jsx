@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
       <div className="lg:flex justify-between">
         <div className="lg:w-[30%]">
-            <img src='../src/Ban/logo.png' alt="" className='pb-4' />
+            <img src='./Image/logo.png' alt="" className='pb-4' />
             <p className='hidden lg:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, unde. Laborum esse,blanditiis porro consequuntur, totam incidunt. Accusantium, odit ipsam nesciunt consequatur et iste.</p>
         </div>
         <div className="flex flex-col gap-4">
