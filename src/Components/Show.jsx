@@ -37,19 +37,19 @@ export default function Show() {
   return (
     
    
-       <div  className=' lg:px-20 px-5    lg:gap-5 justify-between'>
+       <div  className=' lg:px-20  lg:gap-5 justify-between'>
            <Slider {...settings}>
         {
             products.map((item,index) => {
                 return ( 
-            <div className="lg:w-15% w-fit shadow ">
-               <div className='flex  relative'>
+            <div className="lg:w-[25%] w-[48%]  shadow ">
+               <div className='flex relative'>
 
-                <div className='h-[55vh] '>
+                <div className='lg:h-[55vh] h-[33vh]  '>
                 <Link to={`/single/${item.id}`} > <img  src={image[index] || item.img_1} className='w-full h-full' ></img></Link>
                 </div>
                
-               <div className="h-[55vh] mt-0 w-[20%]  absolute flex  flex-col justify-end ">
+               <div className="lg:h-[55vh] h-[33vh] mt-0 w-[20%]  absolute flex  flex-col justify-end ">
                     <div>
                         <img onClick={() => changeImg(index, item.img_1)} className='cursor-pointer hover:opacity-100 opacity-40 ' src={ item.img_1} ></img>
                         <img onClick={() => changeImg(index, item.img_2)} className='cursor-pointer hover:opacity-100 opacity-40 ' src={ item.img_2}></img>
