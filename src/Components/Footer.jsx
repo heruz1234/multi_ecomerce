@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <div className='lg:px-20 px-3 py-4 lg:py-8 text-gray-400 flex flex-col gap-4 items-center lg:gap-15 bg-gray-100'>
-      {/* <div className=' border-b-1 lg:flex lg:pb-8 pb-4'>
+      <div className=' border-b-1 lg:flex lg:pb-8 pb-4'>
         <div className=" text-center lg:border-r-1 lg:w-[50%] ">
             <h1 className='lg:text-2xl text-xl text-black font-bold'>KNOW IT ALL FIRST!</h1>
             <p className=' opacity-0 lg:opacity-100'>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
       <div className="lg:flex justify-between">
         <div className="lg:w-[30%]">
-            <img src={Logo} alt="" className='pb-4' />
+            <img src='../src/Ban/logo.png' alt="" className='pb-4' />
             <p className='hidden lg:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, unde. Laborum esse,blanditiis porro consequuntur, totam incidunt. Accusantium, odit ipsam nesciunt consequatur et iste.</p>
         </div>
         <div className="flex flex-col gap-4">
@@ -46,7 +46,7 @@ export default function Footer() {
                 <li>Fax: 123456</li>
             </ul>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
